@@ -1,0 +1,5 @@
+const fs=require('fs'),path=require('path'),crypto=require('crypto');
+const root=path.resolve(__dirname,'..'),m=JSON.parse(fs.readFileSync(path.join(root,'release/manifest.json'),'utf8'));
+let count=0;for(const [file,hash]of Object.entries(m.source)){if(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,file))).digest('hex')!==hash)throw Error('source differs '+file);count++;}
+for(const [file,meta]of Object.entries(m.artifacts)){const p=path.join(root,'release',file);if(fs.statSync(p).size!==meta.bytes||crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex')!==meta.sha256)throw Error('release differs '+file);count++;}
+const html=fs.readFileSync(path.join(root,'release/破契凌霄-历练版v0.8.html'),'utf8');if(/<script src=|<link rel="stylesheet"/.test(html))throw Error('offline runtime still external');if((html.match(/data:image\/png;base64,/g)||[]).length<5)throw Error('offline art missing');console.log(JSON.stringify({version:m.version,matchingHashes:count,offlineRuntimeInline:true}));

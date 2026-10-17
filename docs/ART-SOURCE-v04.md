@@ -1,0 +1,10 @@
+# v0.4 开场插画来源
+
+- 制作方式：内置 image_gen 工具新生成，原创场景，无小说插图输入。
+- 游戏资源：web/assets/art/opening-trial-v04.png。
+- 原图直接复制，未裁切、缩放、修图；游戏内按 3:2 完整显示。实际尺寸 1536×1024。
+- 用途：仅开局按需请求。菜单和后续正文不预载此资源；正文及操作不等待解码。图片失败提供重试；完整离线版内嵌同一原图。
+
+## 实际生成提示
+
+Use case: illustration-story. Asset type: a single ORIGINAL horizontal opening-scene illustration inside a warm-paper Chinese fantasy interactive text game. Primary request: show a deceptively welcoming public cultivation trial turning into a trap, just before the protagonist awakens. Hand-drawn storybook gouache and colored-pencil art, bold readable silhouettes, warm cream paper texture, terracotta coral and muted navy and sage green; expressive and approachable, not photorealistic, no dark grim horror. Composition: landscape 3:2, three-quarter view across a stone trial platform, compact narrative suitable for phone banner. Foreground center an androgynous young adult traveler viewed from behind/three-quarter rear, dark tied hair, plain navy travel robe, coral sash, wrist held close with a thin red glowing seal drawing a strand of light out toward a bronze pillar. Do not overdefine gender or resemble an existing fictional character. Beside the platform a capable young woman companion wearing sage-green travel clothes, tied dark hair, short practical blade, bracing herself against a heavy gate chain while looking back at the protagonist; a few worried adult trial participants behind her. Background right, a distant seated official in refined terracotta robe at raised desk observing, cold and complacent, not the hero. Bronze pillars and a cream canopy form an enclosed courtyard; sunlit architectural shapes; a small rolled paper notice with illegible abstract marks. Clear central focal point is the red line from the wrist to pillar and the ally holding the exit. Natural anatomy and hands. No text, no lettering, no UI, no title, no borders, no watermark, no recognizable IP characters. Not a gameplay screenshot, a finished richly colored illustration, keep image brightness compatible with cream story cards.

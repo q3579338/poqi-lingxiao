@@ -1,0 +1,10 @@
+node_modules/
+release/
+tests/expedition-out/
+__pycache__/
+*.py[cod]
+*.log
+.env
+.env.*
+.DS_Store
+Thumbs.db

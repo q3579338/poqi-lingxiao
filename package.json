@@ -1,0 +1,15 @@
+{
+  "name": "poqi-lingxiao",
+  "version": "0.8.0-prototype",
+  "private": true,
+  "description": "破契凌霄：已停止开发的文字修行游戏原型",
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node tests/expedition-core-tests.cjs",
+    "test:browser": "node tests/expedition-browser-tests.cjs",
+    "package": "python tests/package.py",
+    "serve": "python tests/preview_server.py"
+  },
+  "devDependencies": { "playwright": "1.62.1" }
+}
